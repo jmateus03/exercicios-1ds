@@ -1,12 +1,12 @@
 // CRIE UMA LÓGICA AQUI
-let numero = 5
+let contagem = 5
 
 do{
-    numero += 1
-    console.log(`Contador: ${numero}`)
-}while(numero != 10)
+    contagem += 1
+    console.log(`Contador: ${contagem}`)
+}while(contagem != 10)
 
-    let resultado = numero
+    let resultado = contagem
 
 // === NÃO MODIFIQUE NADA ABAIXO ============
 module.exports = resultado
