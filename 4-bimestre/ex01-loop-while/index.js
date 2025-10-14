@@ -5,7 +5,7 @@
         console.log(valor)
         valor += 1
     }
-    valor-- 
+    valor--
 
     resultado = valor
 
