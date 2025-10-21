@@ -1,7 +1,7 @@
 let prompt = require("prompt-sync")()
 
-let continuar
-let contadorDias = 0
+let confirmar
+let dias = 0
 let resumo = ""
 let totalGeral = 0
 
@@ -21,17 +21,17 @@ do {
         console.log("Meta não alcançada.")
     }
 
-    contadorDias++
+    dias++
     totalGeral += producao
-    resumo += `\nDia ${contadorDias}: ${producao} peças produzidas`
+    resumo += `\nDia ${dias}: ${producao} peças produzidas`
 
     console.log("\nResumo dos dias anteriores:")
-    for (let i = 1; i <= contadorDias; i++) {}
+    for (let i = 1; i <= dias; i++) {}
     console.log(resumo)
     console.log(`Total geral: ${totalGeral} peças produzidas`)
 
-    continuar = prompt("Deseja simular outro turno? (S/N) ").toUpperCase()
+    confirmar = prompt("Deseja simular outro turno? (S/N) ").toUpperCase()
 
-} while (continuar === "S")
+} while (confirmar === "S")
 
 console.log("Encerrando sistema de produção...")
